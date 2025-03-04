@@ -1,40 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🪙**CryptoPulse App**
 
-## Getting Started
+CryptoPulse transforms cryptocurrency tracking with cutting-edge technology, delivering real-time insights across 500+ digital assets. Our platform combines intuitive design with advanced analytics, empowering traders from beginners to professionals to make informed decisions. Beyond just charts and data, we provide intelligent market predictions, sentiment analysis, and educational resources that demystify the complex world of crypto trading.
 
-First, run the development server:
+## Technologies
+
+- Node v22.14 (a `.nvmrc` is presented for [nvm](https://github.com/nvm-sh/nvm) users).
+- [pnpm](https://pnpm.io/workspaces) for manage dependencies.
+
+## Projects
+
+### Directory structure (Next.js 15 - Pages Router)
+
+Includes the project directory structure, below is a concise overview of each component mentioned:
+
+- ##### `.vscode`:
+
+  _The directory contains Visual Studio Code-specific configuration files_
+
+- ##### `components`:
+
+  _Houses reusable React components that can be used across multiple pages_
+
+- ##### `contexts`:
+
+  _Manages React context providers for global state management_
+
+- ##### `graphql`:
+
+  _Contains GraphQL-related files for API interactions_
+
+- ##### `hooks`:
+
+  _Custom React hooks for reusable logic_
+
+- ##### `layouts`:
+
+  _Defines layout components that wrap pages_
+
+- ##### `lib`:
+
+  _Utility functions and helper modules_
+
+- ##### `pages`:
+
+  _Contains Next.js page components and route definitions_
+
+- ##### `public`:
+
+  _Static assets served directly by Next.js_
+
+- ##### `services`:
+
+  _API service layers and external integrations_
+
+- ##### `stores`:
+
+  _State management store configurations_
+
+- ##### `styles`:
+
+  _Styling and global CSS files_
+
+- ##### `svg`:
+
+  _SVG icon and graphic assets_
+
+- ##### `types`:
+  _TypeScript type definitions_
+
+## Local Environment
+
+To set up a local environment, we provide an `.env.example` file. Simply create a `.env` file by copying `.env.example` and add your Binance API URL. That's it - you're ready to start coding!
+
+**Note:** Ensure you replace the placeholder [Binance API URL](https://github.com/minh6825/api-binance/blob/main/README.md). with your actual endpoint.
+
+## Bootstrap Project
+
+After cloning the project, please make sure to run the following commands to bootstrap the project:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm i -g pnpm@10.5.2
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Run Locally
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- Run `pnpm run dev` in the root directory
+- Or, run `pnpm run dev:or` to specify a different port
